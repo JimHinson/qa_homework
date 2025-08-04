@@ -34,6 +34,8 @@ This directory contains end-to-end tests for the HolistiPlan rewards application
 ## Running Tests
 
 ### Interactive Mode (Recommended for Development)
+Install cypress
+npm install
 
 Open the Cypress Test Runner:
 ```bash
