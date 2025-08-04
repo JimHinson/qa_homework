@@ -23,7 +23,7 @@ Once the docker containers are up, you can visit the site at http://localhost:30
 A default user has already been created with the following credentials:
 
 - _Email_: `someone@holistiplan.com`
-- _Password_: `bfx!wkp3zve3WUX*guq`
+- Please request the password
 
 To create another **normal user account** (if you need to), just go to Sign Up and fill out the form. Once you submit it,
 you'll see a "Verify Your E-mail Address" page. Go to your docker desktop holistiplan/django container log output

@@ -1,0 +1,70 @@
+{
+  "rewards": [
+    {
+      "id": 1,
+      "name": "Bronze Badge",
+      "description": "Complete your first task",
+      "points": 100,
+      "type": "badge",
+      "achieved": true
+    },
+    {
+      "id": 2,
+      "name": "Silver Badge",
+      "description": "Complete 10 tasks",
+      "points": 500,
+      "type": "badge",
+      "achieved": false
+    },
+    {
+      "id": 3,
+      "name": "Gold Badge",
+      "description": "Complete 50 tasks",
+      "points": 1000,
+      "type": "badge",
+      "achieved": false
+    },
+    {
+      "id": 4,
+      "name": "Platinum Badge",
+      "description": "Complete 100 tasks",
+      "points": 2500,
+      "type": "badge",
+      "achieved": false
+    },
+    {
+      "id": 5,
+      "name": "Daily Login",
+      "description": "Log in every day for a week",
+      "points": 200,
+      "type": "streak",
+      "achieved": true
+    }
+  ],
+  "user": {
+    "id": 1,
+    "email": "someone@holistiplan.com",
+    "totalPoints": 300,
+    "level": 2,
+    "achievements": [1, 5],
+    "joinDate": "2025-01-01",
+    "lastLogin": "2025-08-04"
+  },
+  "leaderboard": [
+    {
+      "rank": 1,
+      "username": "TopUser",
+      "points": 5000
+    },
+    {
+      "rank": 2,
+      "username": "SecondPlace",
+      "points": 4500
+    },
+    {
+      "rank": 3,
+      "username": "ThirdPlace",
+      "points": 4000
+    }
+  ]
+}

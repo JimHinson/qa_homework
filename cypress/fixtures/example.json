@@ -1,0 +1,18 @@
+{
+  "users": {
+    "defaultUser": {
+      "email": "someone@holistiplan.com",
+      "password": "bfx!wkp3zve3WUX*guq"
+    },
+    "testUser": {
+      "name": "Test User",
+      "email": "test@example.com",
+      "password": "testpassword123"
+    }
+  },
+  "apiEndpoints": {
+    "login": "/api/auth/login/",
+    "users": "/api/users/",
+    "rewards": "/api/rewards/"
+  }
+}

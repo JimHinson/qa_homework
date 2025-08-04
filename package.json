@@ -9,6 +9,7 @@
     "babel-loader": "^9.1.2",
     "bootstrap": "^5.2.3",
     "css-loader": "^6.5.1",
+    "cypress": "^14.5.3",
     "mini-css-extract-plugin": "^2.4.5",
     "node-sass-tilde-importer": "^1.0.2",
     "pixrem": "^5.0.0",
@@ -36,6 +37,24 @@
   },
   "scripts": {
     "dev": "webpack serve --config webpack/dev.config.js",
-    "build": "webpack --config webpack/prod.config.js"
+    "build": "webpack --config webpack/prod.config.js",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:chrome": "cypress run --browser chrome",
+    "cypress:run:firefox": "cypress run --browser firefox",
+    "cypress:run:edge": "cypress run --browser edge",
+    "cypress:run:proxy": "cypress run --config defaultCommandTimeout=20000,requestTimeout=30000,responseTimeout=45000",
+    "test:e2e": "cypress run",
+    "test:e2e:open": "cypress open",
+    "test:e2e:headed": "cypress run --headed",
+    "test:e2e:record": "cypress run --record",
+    "test:e2e:proxy": "cypress run --config defaultCommandTimeout=20000,requestTimeout=30000,responseTimeout=45000,pageLoadTimeout=90000",
+    "test:smoke": "cypress run --spec 'cypress/e2e/sample.cy.js,cypress/e2e/authentication.cy.js'",
+    "test:smoke:proxy": "cypress run --spec 'cypress/e2e/sample.cy.js,cypress/e2e/authentication.cy.js' --config defaultCommandTimeout=20000,requestTimeout=30000",
+    "test:full": "cypress run --spec 'cypress/e2e/**/*.cy.js'",
+    "test:auth": "cypress run --spec 'cypress/e2e/authentication.cy.js'",
+    "test:rewards": "cypress run --spec 'cypress/e2e/rewards.cy.js'",
+    "test:api": "cypress run --spec 'cypress/e2e/api-integration.cy.js'",
+    "test:ui": "cypress run --spec 'cypress/e2e/ui-accessibility.cy.js'"
   }
 }
